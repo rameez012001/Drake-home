@@ -38,6 +38,9 @@
 }
 
 @media (max-width: 1220px) {
+    .custom-container {
+        max-width: 767px;
+    }
     .content-width {
         max-width: 100%;
     }
@@ -46,7 +49,7 @@
     }
     .left-sidebar {
         position: relative;
-        max-width: 95%;
+        max-width: 767px;
         left: 0;
         margin: auto;
         top: 0;
@@ -80,6 +83,31 @@
     .testimonial-area {
         padding-top: 50px;
     }
+
+    .services-items {
+        display: flex;
+        gap: 15px;
+    }
+    .services-items .service-item {
+        margin-bottom: 0;
+        padding: 30px 30px 30px 30px;
+        width: 33.3333%;
+    }
+    .services-items .service-item h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .services-items .service-item p {
+        margin-bottom: 25px;
+    }
+    .services-items .service-item i {
+        font-size: 20px;
+        top: 25px;
+        right: 20px;
+    }
+    .pricing-table-items .pricing-table .theme-btn {
+        padding: 11px 40px 10px 40px;
+    }
 }
 @media (max-width: 977px) {
     .blog-three-columns-main .blog-content-area .row > .col-md-4 {
@@ -100,6 +128,9 @@
     .icon-menu {
         right: 30px;
         top: 30px;
+    }
+    .hero-section .hero-content .go-to-project-btn {
+        margin-left: 0;
     }
     .skills-area .skills-content .row .col-md-3 {
         flex: 0 0 auto;
@@ -213,6 +244,13 @@
         margin-right: 40px;
         margin-bottom: 20px;
     }
+    .services-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .services-items .service-item {
+        width: 100%;
+    }
 
     .blog-sidebar {
         margin-top: 50px;
@@ -257,6 +295,9 @@
     }
     .resume-area .resume-content .resume-timeline .item {
         padding-left: 50px;
+    }
+    .services-items {
+        grid-template-columns: 1fr;
     }
     .portfolio-area {
         padding-top: 40px;

@@ -1,5 +1,35 @@
 
+/* 
+    -- Table of Content --
 
+    * 01 - Menu
+    * 02 - Responsive Sidebar Menu
+    * 03 - Global Color
+    * 04 - Header
+    * 05 - Section Header
+    * 06 - Left Sidebar
+    * 07 - Hero Section
+    * 08 - Home 3
+    * 09 - Home 5
+    * 10 - About
+    * 11 - Resume
+    * 12 - Services
+    * 13 - Skills
+    * 14 - Portfolio
+    * 15 - Testimonial
+    * 16 - Client
+    * 17 - Pricing Table
+    * 18 - Contact
+    * 19 - Breadcrumb
+    * 20 - Blog items
+    * 21 - Blog Style 2
+    * 22 - Blog Details
+    * 23 - Comment
+    * 24 - Comment Form
+    * 25 - Footer
+    * @Keyframe
+
+*/
 :root {
     --primary_color: #28e98c;
 }
@@ -15,9 +45,9 @@ body {
     scroll-behavior: smooth;
     color: #999999;
     background: #1f1f1f;
-    line-height: 1.7!important;
-    /* overflow-x: hidden; */
-    /* height: 100vh; */
+    line-height: 1.7;
+    overflow-x: hidden;
+    height: 100vh;
 }
 .bg-white {
     background: #fff;
@@ -42,7 +72,7 @@ ul {
     margin-left: auto;
 }
 .theme-btn {
-    background-color: var(--primary_color)!important;
+    background: var(--primary_color);
     color: #000000;
     display: block;
     text-align: center;
@@ -55,7 +85,7 @@ ul {
     border: none;
     transition: .3s;
     cursor: pointer;
-    border: 2px solid  var(--primary_color);
+    border: 2px solid var(--primary_color);
 }
 .theme-btn i {
     font-size: 24px;
@@ -64,8 +94,8 @@ ul {
     margin-bottom: 3px;
 }
 .theme-btn:hover {
-    background:none!important;
-    color:  var(--primary_color);
+    background: none;
+    color: var(--primary_color);
 }
 .custom-container {
     max-width: 1130px;
@@ -78,6 +108,7 @@ ul {
     text-transform: uppercase;
     font-weight: 300;
     margin: 0;
+    border: 1px solid #565656;
     padding: 9px 20px;
     border-radius: 30px;
     margin-bottom: 53px;
@@ -129,9 +160,10 @@ ul {
     top: 60px;
     width: 55px;
     height: 55px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
-    border-color:#575757;
+    border: 1px solid #575757;
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -153,16 +185,31 @@ ul {
 .icon-menu:hover span {
     background: var(--primary_color);
 }
+
+
+#scroll-section {
+    /* overflow-x: hidden !important;
+    overflow-y: auto !important; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 100vh; */
+}
+.scroll-content {
+    /* transform: translate(0) !important; */
+}
 main.drake-main {
-    inset: 0px;
+    /* inset: 0px;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: fixed; */
+    /* overflow: hidden; */
+}
+.page-section {
     overflow: hidden;
 }
 
 
-/* Menu */
+/* 01 - Menu */
 .menu {
     flex-direction: column;
     border: 1px solid #575757;
@@ -231,7 +278,7 @@ main.drake-main {
     z-index: -1;
 }
 
-/* Responsive Sidebar Menu */
+/* 02 - Responsive Sidebar Menu */
 .responsive-sidebar-menu {
     position: fixed;
     left: 0;
@@ -334,6 +381,8 @@ main.drake-main {
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul li a:hover {
     color: var(--primary_color);
 }
+
+/* 03 - Global Color */
 .global-color {
     position: fixed;
     left: 0;
@@ -382,7 +431,7 @@ main.drake-main {
 .global-color .inner .global-color-option .global-color-option-inner .themes {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 90px;
+    padding-top: 30px;
 }
 .global-color .inner .global-color-option .global-color-option-inner .themes li {
     margin-right: 80px;
@@ -428,7 +477,7 @@ main.drake-main {
     font-weight: 200;
     font-size: 34px;
     line-height: 1.2;
-    margin-bottom: 116px;
+    margin-bottom: 80px;
 }
 .global-color.active .inner .global-color-option {
     margin-right: 0;
@@ -447,7 +496,7 @@ main.drake-main {
     height: 30px;
     border-radius: 50%;
     position: relative;
-    background:  var(--primary_color);
+    background: #28e98c;
 }
 .global-color .global-color-option .color-boxed a::before {
     content: '';
@@ -481,9 +530,6 @@ main.drake-main {
 .global-color .global-color-option .color-boxed a.clr-active::before {
     opacity: 1;
 }
-.global-color .global-color-option .color-boxed a:nth-child(1) {
-    background: #28e98c;
-}
 .global-color .global-color-option .color-boxed a:nth-child(2) {
     background: #e4af12;
 }
@@ -496,12 +542,24 @@ main.drake-main {
 .global-color .global-color-option .color-boxed a:nth-child(5) {
     background: #c0c0c0;
 }
+.global-color .global-color-option .color-boxed a:nth-child(6) {
+    background: #1338f3;
+}
+.global-color .global-color-option .color-boxed a:nth-child(7) {
+    background: #f31313;
+}
+.global-color .global-color-option .color-boxed a:nth-child(8) {
+    background: #ff99cc;
+}
+.global-color .global-color-option .color-boxed a:nth-child(9) {
+    background: #cceb00;
+}
 .global-color .global-color-option .color-boxed a i {
     font-size: 14px;
 }
 
 
-/* Header */
+/* 04 - Header */
 .header-area {
     background: #1f1f1f;
     position: sticky;
@@ -588,7 +646,7 @@ main.drake-main {
 }
 
 
-/* Section Header */
+/* 05 - Section Header */
 .section-header h1 {
     font-size: 48px;
     line-height: 60px;
@@ -601,7 +659,7 @@ main.drake-main {
 }
 
 
-/* Left Sidebar */
+/* 06 - Left Sidebar */
 .left-sidebar {
     max-width: 485px;
     width: 100%;
@@ -656,7 +714,8 @@ main.drake-main {
     height: 50px;
     line-height: 46px;
     text-align: center;
-    border-color:#565656;
+    border: 2px solid #565656;
+    border-radius: 50%;
     color: #999999;
     font-size: 20px;
     transition: .3s;
@@ -671,7 +730,7 @@ main.drake-main {
 
 
 
-/* Hero Section */
+/* 07 - Hero Section */
 .hero-section {
     padding: 68px 0;
     position: relative;
@@ -733,7 +792,8 @@ main.drake-main {
     line-height: 24px;
     text-transform: uppercase;
 }
-/* Home 3 */
+
+/* 08 - Home 3 */
 .home1-page,
 .home5-page,
 .home6-page {
@@ -762,7 +822,7 @@ main.drake-main {
 .home6-page .icon-menu {
     background: #000000;
 }
-/* Home 5 */
+/* 09 - Home 5 */
 body .body-overlay {
     position: fixed;
     left: 0;
@@ -784,7 +844,7 @@ body .body-overlay {
 
 
 
-/* About */
+/* 10 - About */
 .about-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -795,7 +855,7 @@ body .body-overlay {
 }
 
 
-/* Resume */
+/* 11 - Resume */
 .resume-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -841,6 +901,7 @@ body .body-overlay {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 5px;
+    color: #fff;
 }
 .resume-area .resume-content .resume-timeline .item h2 a {
     color: #fff;
@@ -863,7 +924,7 @@ body .body-overlay {
 
 
 
-/* Services */
+/* 12 - Services */
 .services-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -883,6 +944,7 @@ body .body-overlay {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 8px;
+    color: #fff;
 }
 .services-items .service-item h2 a {
     color: #fff;
@@ -918,7 +980,7 @@ body .body-overlay {
 
 
 
-/* Skills */
+/* 13 - Skills */
 .skills-area {
     padding-top: 90px;
     padding-bottom: 40px;
@@ -954,7 +1016,7 @@ body .body-overlay {
 
 
 
-/* Portfolio */
+/* 14 - Portfolio */
 .portfolio-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -1021,7 +1083,7 @@ body .body-overlay {
 
 
 
-/* Testimonial */
+/* 15 - Testimonial */
 .testimonial-item .testimonial-item-inner {
     border: 2px solid #565656;
     border-radius: 30px;
@@ -1097,7 +1159,7 @@ body .body-overlay {
     color: #fff;
 }
 
-/* Client */
+/* 16 - Client */
 .clients-logos {
     padding-top: 100px;
 }
@@ -1122,7 +1184,7 @@ body .body-overlay {
 
 
 
-/* Pricing Table */
+/* 17 - Pricing Table */
 .pricing-area {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -1199,7 +1261,7 @@ body .body-overlay {
 
 
 
-/* Contact */
+/* 18 - Contact */
 .contact-area {
     padding-bottom: 50px;
 }
@@ -1299,7 +1361,7 @@ body .body-overlay {
 
 
 
-/* Blog With Right Sidebar */
+/* 19 - Breadcrumb */
 .breadcrumb-area {
     position: relative;
     padding: 50px 0px 50px;
@@ -1358,7 +1420,7 @@ body .body-overlay {
     color: #ffffff;
 }
 
-/* Blog items */
+/* 20 - Blog items */
 .blog-content-area {
     padding-top: 100px;
     padding-bottom: 60px;
@@ -1579,7 +1641,7 @@ body .body-overlay {
     color: #fff;
 }
 
-/* Blog Style 2 */
+/* 21 - Blog Style 2 */
 .blog-item2 {
     text-align: center;
 }
@@ -1629,7 +1691,7 @@ body .body-overlay {
     font-size: 14px;
 }
 
-/* Blog Details */
+/* 22 - Blog Details */
 .blog-details-area {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1689,6 +1751,8 @@ body .body-overlay {
     background: #000000;
     color: #fff;
 }
+
+/* 23 - Comment */
 .comments-area h3 {
     color: #fff;
     font-size: 20px;
@@ -1764,7 +1828,7 @@ body .body-overlay {
     padding-top: 40px;
 }
 
-/* Comment Form */
+/* 24 - Comment Form */
 .comment-form {
     padding-top: 20px;
 }
@@ -1804,7 +1868,7 @@ body .body-overlay {
 }
 
 
-/* Footer */
+/* 25 - Footer */
 .footer-area {
     background: #1f1f1f;
     position: relative;
@@ -1891,7 +1955,7 @@ body .body-overlay {
 
 
 
-
+/* @Keyframe */
 @keyframes rotating {
     0% {
         transform: rotate(0);
